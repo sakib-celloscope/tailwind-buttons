@@ -7,26 +7,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="flex justify-center items-center h-screen">
-      <div class="flex items-center gap-4">
-        <button
-          class="group relative overflow-hidden rounded-sm bg-white px-6 py-2 shadow"
-          type="button"
-        >
-          <div
-            class="absolute inset-0 w-2 bg-[#f79725] transition-all duration-300 ease-in-out group-hover:w-full"
-          ></div>
-          <span
-            class="relative text-black transition-all duration-300 group-hover:text-white"
-            >Pending</span
+    <main>
+      <!-- Light Theme -->
+      <div class="flex justify-center items-center h-screen">
+        <div class="flex items-center gap-4">
+          <button
+            class="group relative overflow-hidden rounded-sm bg-white px-6 py-2 shadow"
+            type="button"
           >
-        </button>
-        <button
-          type="button"
-          class="rounded-sm bg-[#1EA7FF] px-4 py-2 font-medium uppercase text-white transition duration-300 hover:translate-y-[2px]"
-        >
-          Incomplete
-        </button>
+            <div
+              class="absolute inset-0 w-2 bg-[#f79725] transition-all duration-300 ease-in-out group-hover:w-full"
+            ></div>
+            <span
+              class="relative text-black transition-all duration-300 group-hover:text-white"
+              >Pending</span
+            >
+          </button>
+          <button
+            type="button"
+            class="rounded-sm bg-[#1EA7FF] px-4 py-2 font-medium uppercase text-white transition duration-300 hover:translate-y-[2px]"
+          >
+            Incomplete
+          </button>
+          <button
+            class="bg-red-700 text-white py-2 px-10 rounded-md uppercase hover:shadow hover:bg-red-600"
+          >
+            Pay now
+          </button>
+          <button
+            class="px-6 py-2 text-white bg-[#4681f4] rounded-md uppercase shadow-sm hover:scale-105 transition duration-300"
+          >
+            Hello
+          </button>
+        </div>
+      </div>
+      <!-- Dark Theme -->
+      <div class="h-screen bg-black flex justify-center items-center">
+        <div class="relative inline-flex group">
+          <div
+            class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"
+          ></div>
+          <a
+            href="#"
+            title="Get quote now"
+            class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+            role="button"
+            >Get it now
+          </a>
+        </div>
       </div>
     </main>
   </body>
